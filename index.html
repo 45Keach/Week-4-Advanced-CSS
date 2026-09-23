@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SpendWise responsive dashboard shell built with CSS Grid and Flexbox.">
+  <title>SpendWise Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <span>SpendWise</span>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#"><span aria-hidden="true">⌂</span> Overview</a>
+        <a class="nav-link" href="#"><span aria-hidden="true">↕</span> Transactions</a>
+        <a class="nav-link" href="#"><span aria-hidden="true">◫</span> Budgets</a>
+        <a class="nav-link" href="#"><span aria-hidden="true">◷</span> Reports</a>
+        <a class="nav-link" href="#"><span aria-hidden="true">⚙</span> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Monthly budget</p>
+        <strong>$2,480 <span>of $3,000</span></strong>
+        <div class="progress" aria-label="83 percent of monthly budget used"><span></span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Wednesday, September 23</p>
+          <h1>Good afternoon, Alex</h1>
+        </div>
+        <div class="header-actions">
+          <button class="icon-button" type="button" aria-label="Notifications">♢</button>
+          <div class="avatar" aria-label="Alex profile">A</div>
+        </div>
+      </header>
+
+      <section class="summary" aria-label="Spending summary">
+        <div>
+          <p class="eyebrow">Total spending this month</p>
+          <h2>$2,480.00</h2>
+          <p class="positive">↓ 8.4% <span>vs. last month</span></p>
+        </div>
+        <div class="summary-stat">
+          <span>Remaining</span>
+          <strong>$520.00</strong>
+        </div>
+        <div class="summary-stat">
+          <span>Savings rate</span>
+          <strong>18.6%</strong>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">September overview</p>
+            <h2>Spending by category</h2>
+          </div>
+          <button class="filter" type="button">This month <span>⌄</span></button>
+        </div>
+
+        <div class="cards">
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">🍽</span><span class="trend">+4.2%</span></div>
+            <div class="card-body"><h3>Food</h3><strong>$420</strong><p>of $500 budget</p></div>
+            <div class="mini-progress"><span style="width:84%"></span></div>
+          </article>
+
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">🚆</span><span class="trend down">-6.1%</span></div>
+            <div class="card-body"><h3>Transport</h3><strong>$185</strong><p>of $300 budget</p></div>
+            <div class="mini-progress"><span style="width:62%"></span></div>
+          </article>
+
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">⌂</span><span class="trend">0.0%</span></div>
+            <div class="card-body"><h3>Rent</h3><strong>$1,200</strong><p>of $1,200 budget</p></div>
+            <div class="mini-progress"><span style="width:100%"></span></div>
+          </article>
+
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">♪</span><span class="trend">+12.5%</span></div>
+            <div class="card-body"><h3>Entertainment</h3><strong>$240</strong><p>of $350 budget</p></div>
+            <div class="mini-progress"><span style="width:69%"></span></div>
+          </article>
+
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">↗</span><span class="trend down">+15.0%</span></div>
+            <div class="card-body"><h3>Savings</h3><strong>$310</strong><p>of $400 goal</p></div>
+            <div class="mini-progress"><span style="width:78%"></span></div>
+          </article>
+
+          <article class="card" tabindex="0">
+            <div class="card-top"><span class="card-icon">⚡</span><span class="trend down">-3.7%</span></div>
+            <div class="card-body"><h3>Utilities</h3><strong>$125</strong><p>of $180 budget</p></div>
+            <div class="mini-progress"><span style="width:69%"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">Recent activity</p><h2>Latest transactions</h2></div><a href="#">View all</a></div>
+          <div class="transaction"><span class="transaction-icon">☕</span><div><strong>Morning Brew</strong><small>Food · Today</small></div><b>-$8.50</b></div>
+          <div class="transaction"><span class="transaction-icon">🚕</span><div><strong>City Taxi</strong><small>Transport · Yesterday</small></div><b>-$24.00</b></div>
+          <div class="transaction"><span class="transaction-icon">◉</span><div><strong>StreamFlix</strong><small>Entertainment · Sep 20</small></div><b>-$15.99</b></div>
+        </div>
+
+        <div class="panel goal">
+          <p class="eyebrow">Savings goal</p>
+          <h2>Emergency fund</h2>
+          <div class="goal-row"><strong>$4,250</strong><span>of $6,000</span></div>
+          <div class="progress"><span style="width:71%"></span></div>
+          <p class="muted">71% complete · $1,750 to go</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
